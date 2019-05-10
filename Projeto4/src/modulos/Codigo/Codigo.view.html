@@ -1,0 +1,31 @@
+<div class="jumbotron">
+    <h1>Hello, {{vm.name}}</h1>
+
+    <div class="row">
+
+        <table class="table table-hover table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">codigo</th>
+                    <th scope="col">teste</th>
+                    <th scope="col">ano nascimento</th>
+                    <td>{{ano desejado}}</td>
+                    <td>{{calcular}}</td>
+                </tr>
+            </thead>
+            <tbody ng-repeat='dono in vm.donos'>
+                <tr ng-repeat='cachorro in dono.cachorros'>
+                    <td><b>{{$index+1}}</b></td>
+                    <td>{{codigo.nome}}</td>
+                    <td>{{teste.nome}}</td>
+                    <td>{{anoNascimento.nome}}</td>
+                    <td>{{anoDesejado.nome}}</td>
+                    <td>{{calcular.nome}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</div>
